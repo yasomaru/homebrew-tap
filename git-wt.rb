@@ -11,7 +11,7 @@ class GitWt < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_darwin_amd64.tar.gz"
-      sha256 "43f95fef1111494becea3990d655c0ec97cff0d10031459114ef472a7e7fdc65"
+      sha256 "5f1b2041627e060bac08acaaf84afd48de98572c871790808190f02fec45061c"
 
       def install
         bin.install "git-wt"
@@ -19,7 +19,7 @@ class GitWt < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_darwin_arm64.tar.gz"
-      sha256 "75ed2d65f36a911e550829c0f20cd0a47d2a8a32decb329dec2eb29f9878ff23"
+      sha256 "c26fc45154b4058a063bc649231ff4827da3fbfc0abc69fc71198741b69d2fb2"
 
       def install
         bin.install "git-wt"
@@ -30,14 +30,14 @@ class GitWt < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_linux_amd64.tar.gz"
-      sha256 "b58495c25626621da8bfe435eb43e06b228e671bda0476b697a10459909e8f58"
+      sha256 "ea1bcf6305411efc757c0ab7a3836d0c3c6dfd6ec5767e67a8b1c597688bb638"
       def install
         bin.install "git-wt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_linux_arm64.tar.gz"
-      sha256 "32e4216332449a6c3aa97b772011ab621ff5e5993c75c79ae409c7687376b828"
+      sha256 "3778501cd60022305eb943bf16ee98b7282b064ecd1845809d7df8e7c2955adb"
       def install
         bin.install "git-wt"
       end
