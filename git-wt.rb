@@ -5,21 +5,21 @@
 class GitWt < Formula
   desc "A smarter way to manage git worktrees"
   homepage "https://github.com/yasomaru/git-wt"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yasomaru/git-wt/releases/download/v1.0.1/git-wt_1.0.1_darwin_amd64.tar.gz"
-      sha256 "d24dfd8d2b998bfba911db3ce28075f4dd1c5f797da4e7f0f72d40e1a10c1e88"
+      url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_darwin_amd64.tar.gz"
+      sha256 "43f95fef1111494becea3990d655c0ec97cff0d10031459114ef472a7e7fdc65"
 
       def install
         bin.install "git-wt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yasomaru/git-wt/releases/download/v1.0.1/git-wt_1.0.1_darwin_arm64.tar.gz"
-      sha256 "fa64505f9410678b13205b25f222b69f553fcbc9dd9509f8ee5e9e19031b565a"
+      url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_darwin_arm64.tar.gz"
+      sha256 "75ed2d65f36a911e550829c0f20cd0a47d2a8a32decb329dec2eb29f9878ff23"
 
       def install
         bin.install "git-wt"
@@ -29,15 +29,15 @@ class GitWt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yasomaru/git-wt/releases/download/v1.0.1/git-wt_1.0.1_linux_amd64.tar.gz"
-      sha256 "df011b182e148c2cf041a95399447f49c8c900b527326f31cd367597aefba717"
+      url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_linux_amd64.tar.gz"
+      sha256 "b58495c25626621da8bfe435eb43e06b228e671bda0476b697a10459909e8f58"
       def install
         bin.install "git-wt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yasomaru/git-wt/releases/download/v1.0.1/git-wt_1.0.1_linux_arm64.tar.gz"
-      sha256 "6092976de2108f5bf5aca62d2db2ee4dde47d17e0d8f93cafedaeb2312c35a5d"
+      url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_linux_arm64.tar.gz"
+      sha256 "32e4216332449a6c3aa97b772011ab621ff5e5993c75c79ae409c7687376b828"
       def install
         bin.install "git-wt"
       end
