@@ -5,23 +5,23 @@
 class GitWt < Formula
   desc "A smarter way to manage git worktrees"
   homepage "https://github.com/yasomaru/git-wt"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_darwin_amd64.tar.gz"
-      sha256 "0055023607f5368034581e519db9f106a19005b0d143ed23639a6e98a65276a8"
+      url "https://github.com/yasomaru/git-wt/releases/download/v1.2.0/git-wt_1.2.0_darwin_amd64.tar.gz"
+      sha256 "49945963a09baac3a5a27d0042f6e29e7c6853573aea0e4244165f60006ff96f"
 
-      def install
+      define_method(:install) do
         bin.install "git-wt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_darwin_arm64.tar.gz"
-      sha256 "fc455b39e9884c5350538c083dc6772ec00c246adf59432c5ffc20094e84a002"
+      url "https://github.com/yasomaru/git-wt/releases/download/v1.2.0/git-wt_1.2.0_darwin_arm64.tar.gz"
+      sha256 "a0d0108627ad52283cb2c9f67a137241a369be1fa8a9dd63cb3bbf37fc719d79"
 
-      def install
+      define_method(:install) do
         bin.install "git-wt"
       end
     end
@@ -29,16 +29,16 @@ class GitWt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_linux_amd64.tar.gz"
-      sha256 "121d4baa3f9c1c889faf5ac9aabc95b1ad342cbc160826c7bef14daeb2f9c354"
-      def install
+      url "https://github.com/yasomaru/git-wt/releases/download/v1.2.0/git-wt_1.2.0_linux_amd64.tar.gz"
+      sha256 "f2c4c27f71401bdce24dcc1d2a740e53879d0e2a77afb1308455ec0476a4acae"
+      define_method(:install) do
         bin.install "git-wt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yasomaru/git-wt/releases/download/v1.1.0/git-wt_1.1.0_linux_arm64.tar.gz"
-      sha256 "86397611fb2f3e352e4979f4a031f7cad599d70c39d896dceb6658803cae702f"
-      def install
+      url "https://github.com/yasomaru/git-wt/releases/download/v1.2.0/git-wt_1.2.0_linux_arm64.tar.gz"
+      sha256 "746425efd418cd807757877764a9825261f25c224f4c176c7b07f64ca00d4e48"
+      define_method(:install) do
         bin.install "git-wt"
       end
     end
